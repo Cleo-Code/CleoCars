@@ -1,0 +1,47 @@
+---
+interface Props {
+    messageOffer?: boolean;
+    messageOfferText?: string;
+}
+
+const { messageOffer = true, messageOfferText = "✋ This is an Alert Message" } = Astro.props;
+
+import Logo from "../images/CleoCarsLogo.png"
+
+const NavLinks = [
+    {
+        name: "Inicio",
+        url: "/",
+    },
+    {
+        name: "Maquinaria",
+        url: "/sobre",
+    },
+    {
+        name: "Contacto",
+        url: "/contacto",
+    },
+];
+---
+
+<div class="bg-slate-100 py-3 px-4 mb-5 flex justify-between ">
+    <div class="max-w-[128px]">
+        <img src={Logo.src}>
+    </div>
+
+    {
+        (messageOffer ? <div class="bg-amber-200 text-amber-600 flex items-center justify-center text-center py-1 px-5 rounded-md">{messageOfferText}</div> : [])
+    }
+
+    <div>
+        <ul class="flex">
+            {
+                NavLinks.map((link, index) => (
+                    <li class="mx-4">
+                        <a class="hover:text-amber-600 transition-colors" href={link.url}>{link.name}</a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</div>
