@@ -4,16 +4,16 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'melon' : '#ffadad',
-				'sunset' : '#ffd6a5',
-				'cream' : '#fdffb6',
-				'tea' : '#caffbf',
-				'electric' : '#9bf6ff',
-				'jordy' : '#a0c4ff',
-				'periw' : '#bdb2ff',
-				'mauve' : '#ffc6ff',
-				'light' : '#fffffc',
-				'dark' : '#333333'
+				'cs-melon' : '#ffadad',
+				'cs-sunset' : '#ffd6a5',
+				'cs-cream' : '#fdffb6',
+				'cs-tea' : '#caffbf',
+				'cs-electric' : '#9bf6ff',
+				'cs-jordy' : '#a0c4ff',
+				'cs-periw' : '#bdb2ff',
+				'cs-mauve' : '#ffc6ff',
+				'cs-light' : '#fffffc',
+				'cs-dark' : '#333333'
 			},
 			fontFamily: {
   			'poppins' : 'Poppins'

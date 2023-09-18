@@ -2,12 +2,21 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import BigCard from "../components/BigCard.astro";
 import image from "../images/tesla.jpg";
+import SmallCard from "../components/SmallCard.astro";
 ---
 
-<MainLayout siteName="Inicio | InverFennix">
+<MainLayout siteName="Inicio | InverFennix" customClass="bg-">
 	<div class="w-full grid grid-cols-3 place-items-center">
 		<BigCard src={image.src} isLarge={false} />
 		<BigCard src={image.src} isLarge={true} />
 		<BigCard src={image.src} isLarge={false} />
+	</div>
+	<div>
+		<SmallCard 
+		src={image.src} 
+		model="Modelo T"
+		company="Tesla Inc"
+		price="259"
+		/>
 	</div>
 </MainLayout>
