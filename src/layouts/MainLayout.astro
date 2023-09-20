@@ -3,9 +3,10 @@ import  NavBar from '../components/NavBar.astro';
 
 interface Props {
     siteName: string;
+	customClass?: string;
 }
 
-const { siteName } = Astro.props;
+const { siteName, customClass } = Astro.props;
 ---
 
 
@@ -24,7 +25,7 @@ const { siteName } = Astro.props;
 		<title>{ siteName }</title>
 </head>
 
-<body>
+<body class="bg-slate-100">
     <NavBar />
     <slot />
 </body>
