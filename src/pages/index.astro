@@ -5,18 +5,29 @@ import image from "../images/tesla.jpg";
 import SmallCard from "../components/SmallCard.astro";
 ---
 
-<MainLayout siteName="Inicio | InverFennix" customClass="bg-">
+<MainLayout siteName="Inicio | InverFennix">
 	<div class="w-full grid grid-cols-3 place-items-center">
-		<BigCard src={image.src} isLarge={false} />
+		<BigCard src={image.src} />
 		<BigCard src={image.src} isLarge={true} />
-		<BigCard src={image.src} isLarge={false} />
+		<BigCard src={image.src} />
 	</div>
-	<div>
-		<SmallCard 
-		src={image.src} 
-		model="Modelo T"
-		company="Tesla Inc"
-		price="259M"
-		/>
+	<div class="flex flex-col w-full justify-center items-center my-10">
+		<div class="grid grid-cols-4 place-items-center gap-10 w-4/5 p-10">
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+			<SmallCard src={image.src} model="Modelo T" company="Tesla Inc" price="259M" />
+		</div>
 	</div>
 </MainLayout>
+

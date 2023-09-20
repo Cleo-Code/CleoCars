@@ -8,7 +8,7 @@ interface Props {
 const { src, price = 0, model = 'default', isLarge = false } = Astro.props;
 ---
 
-<div class={(isLarge ? 'w-[28rem] h-[50rem] shadow-xl' : 'w-[17.304rem] h-[30.9rem] shadow-md') + ' relative overflow-hidden rounded-xl shadow-dark select-none'}>
+<div class={(isLarge ? 'w-[28rem] h-[50rem] shadow-xl' : 'w-[17.304rem] h-[30.9rem] shadow-md') + ' relative overflow-hidden rounded-xl shadow-cs-dark select-none'}>
   <img src={ src } alt='Foto del vehiculo' class='h-full object-cover relative'>
   <div class="content absolute left-0 bottom-0 w-full h-full">
     <h2 class={(isLarge ? 'bottom-[-4.2rem] text-[10rem]' : 'bottom-[-2.5956rem] text-[6.18rem]') + ' absolute w-full text-cs-light text-center font-semibold after:content-[""] after:w-full after:h-3/5 after:absolute after:left-0 after:bottom-0 font-poppins'}>{ price }</h2>

@@ -8,15 +8,15 @@ interface Props {
 const { model, src, company, price } = Astro.props;
 ---
 
-<div class="flex flex-row w-64 h-96 relative justify-center">
-  <img src={ src } alt="imagen del auto" class="h-2/3 object-cover rounded-md">
-  <div class="absolute bg-cs-light bottom-0 w-full h-1/2 flex justify-center">
-    <h3 class="absolute text-cs-dark text-3xl font-bold top-2">{ model }</h3>
-    <small class="absolute text-cs-dark font-light bottom-1/2">{ company }</small>
-    <span class="absolute text-cs-dark bottom-">{ price }</span>
-    <button id="see_more" class="absolute bottom-0 text-cs-light bg-cs-dark rounded-md py-2 w-3/4 my-2 font-semibold">Cotizar</button>
+<div class="flex flex-col w-64 h-96 justify-center font-poppins">
+  <img src={ src } alt="Foto del auto" class="h-2/3 object-cover rounded-[0.375rem_0.375rem_0_0]">
+  <div class="bg-cs-light w-full h-1/2 rounded-[0_0_0.375rem_0.375rem] grid grid-rows-4">
+    <h3 class="text-cs-dark text-3xl font-bold place-self-center">{ model }</h3>
+    <small class="text-cs-dark font-light place-self-center -mt-8">- { company } -</small>
+    <span class="text-cs-dark place-self-center text-5xl -mt-4 font-semibold w-4/5 border-t-2 border-solid border-cs-dark text-center">${ price }</span>
+    <button id="see_more" class="text-cs-light bg-cs-dark rounded-md py-2 w-3/4 my-2 font-semibold place-self-center shadow-cs-dark shadow-md">Cotizar</button>
   </div>
-</div>
+</div>  
 
 <script>
   const seeMore = document.getElementById('see_more');
